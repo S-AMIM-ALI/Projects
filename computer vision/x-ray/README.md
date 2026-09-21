@@ -1,12 +1,63 @@
-#Pneumonia Detection from Chest X-Ray Images using Deep Learning
- Pneumonia is a lung infection that can be detected using chest X-ray images.
- This project builds a deep learning model to classify X-ray images into Normal and Pneumonia categories.
-#Dataset:
-Total training images: 5232
-Total test images: 624
-Classes: 1.Normal ,2.Pneumonia
-#Data Preprocessing:
-Data augmentation : Resize into (224,224) px applied Rotation technique as Color variation and contrast to increase textures,edge and patterns view.
-Framework:PyTorch
-epochs=50
-Accuracy:88.78% on Test data
+# 🫁 Pneumonia Detection from Chest X-Ray Images
+
+A deep learning project for detecting **Pneumonia from chest X-ray images** using **PyTorch**.
+
+The model classifies chest X-ray images into two categories:
+
+* 🟢 **Normal**
+* 🔴 **Pneumonia**
+
+## 📊 Dataset
+
+| Details         | Information      |
+| --------------- | ---------------- |
+| Training Images | 5,232            |
+| Test Images     | 624              |
+| Classes         | 2                |
+| Input Size      | 224 × 224 pixels |
+
+### Classes
+
+```text
+1. Normal
+2. Pneumonia
+```
+
+## 🔄 Data Preprocessing
+
+The images were resized to **224 × 224 pixels** and data augmentation techniques were applied to improve model generalization.
+
+Augmentation included:
+
+* Rotation
+* Color variation
+* Contrast adjustment
+
+These transformations help the model learn relevant **textures, edges, and visual patterns** from chest X-ray images.
+
+## 🧠 Framework
+
+* **PyTorch**
+* Deep Learning
+* Image Classification
+
+### Training Configuration
+
+```text
+Epochs: 50
+Image Size: 224 × 224
+Task: Binary Classification
+```
+
+## 📈 Results
+
+The model achieved:
+
+> **88.78% Test Accuracy**
+
+on the test dataset.
+
+
+```
+
+
